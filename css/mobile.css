@@ -1,0 +1,52 @@
+#home-section h2{
+    font-size: 1.4rem;
+}
+#home-section p{
+    font-size: 10px;
+    padding: 8px 10px;
+}
+#menu ul{
+    position: fixed;
+    top: 80px;
+    left: -120%;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    transition: all 0.3s ease;
+}
+#home-section a{
+    margin: 8px 0px;
+}
+.menu-btn i{
+    display: flex;
+    justify-content: right;
+    padding: 0px 40px;
+    align-items: center;
+}
+#menu ul li{
+    margin: 40px 0px;
+    text-align: center;
+}
+#menu ul li a{
+    font-size: 20px;
+    display: block;
+}
+.menu-btn{
+    display: block;
+}
+#click:checked ~ ul{
+    left: 0;
+}
+#click:checked ~ .menu-btn i::before{
+    content: "\f00d";
+}
+#menu ul li a:hover,
+#menu ul li a.active{
+        color: #327aff;
+}
+#home-section a{
+    font-size: 16px;
+    width: 130px;
+    padding: 13px;
+}
